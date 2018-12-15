@@ -46,7 +46,8 @@
                         radius: 5
                     });
                   }
-                  circle.bindPopup(data[i].schedule[j].day+' '+data[i].schedule[j].time+'\n @ '+data[i].location[j].address)
+                  // circle.bindPopup(data[i].schedule[j].day+' '+data[i].schedule[j].time+'\n @ '+data[i].location[j].address)
+                            circle.bindPopup("<dl><dt>Schedule</dt>"+"<dd>"+data[i].schedule[j].day+"\n"+data[i].schedule[j].time+"</dd>"+"<dt>Location</dt>"+"<dd>"+data[i].location[j].address+"</dd></dl>");
                   circle.addTo(mymap);
                   circles.push(circle);
                 }
